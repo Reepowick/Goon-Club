@@ -1,0 +1,120 @@
+body{
+    margin: 0px;
+    background-color: beige;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 55px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text2{
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: -45px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.bttn{
+    font-size: xx-large;
+    background-color: bisque;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+.Cost{
+    display: flex;
+    align-items: end;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.BeforeGoon{
+    scale: 0;
+}
+.Gooning{
+    animation-duration: 3s;
+    animation-name: Gooned;
+}
+.GoonCount{
+    display: flex;
+    align-items: end;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container2{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    width: 100%;
+}
+.UpgBttn{
+    font-size: xx-large;
+    border-radius: 15px;
+}
+@keyframes Gooned{
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 100%;
+        rotate: 360deg;
+    }
+}
+@keyframes Nope{
+    0%{
+        transform: translateX(0);
+    }
+    6.5%{
+        transform: translateX(-6px);
+    }
+    18.5%{
+        transform: translateX(5px);
+    }
+    31.5%{
+        transform: translateX(-3px);
+    }
+    43.5%{
+        transform: translateX(2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+}
+.NopeAnim{
+    animation-duration: 1s;
+    animation-name: Nope;
+    animation-timing-function: ease-in-out;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-width: 5px;
+    border-style: solid;
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
